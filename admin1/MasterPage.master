@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <link href="../StyleSheet.css" rel="stylesheet" />
+   
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="margin:0px auto 0px auto;">
+    <form id="form1" runat="server">
+    <div>  
+    <div   style="background-color:deepskyblue;  height:70px;  padding: 20px; color
+        : white;  text-shadow: 2px 2px 4px #000000;
+  text-align: center;"  >
+               <h1 >E-RTO Management System</h1>
+                </div>
+        <div style="text-decoration-style:wavy;margin:20px; text-align:center; text-decoration-color:deepskyblue;background-color:palegreen;">
+          <h2 class="menu1"><marquee scrollamount="10">WELOME IN ADMIN PAGE</marquee>
+ </h2>           </div>
+        <div> 
+            <ul>
+          
+                  <li><a href="Admincontent.aspx">Home</a></li>
+                 <li class="dropdown">
+           <a  class="dropbtn">Appliaction
+           </a>
+         <div class="dropdown-content">
+      <a href="lLearner.aspx">Learner License</a>
+      <a href="Drivingl.aspx">Driving License</a>
+      <a href="Renewall.aspx">Renewing License</a>
+      <a href="Duplicatel.aspx">Duplicate License</a>
+          </div>
+            </li>
+               
+
+      <li class="dropdown">
+           <a  class="dropbtn" href="ShowAllUser.aspx">ManageUser
+           </a>
+               <div class="dropdown-content">
+                   <a href="ShowAllUser.aspx">Update All User</a>
+    </div>
+  </li> <li class="dropdown">
+           <a  class="dropbtn"  href="ShowAdmin.aspx">Manage Admin
+           </a>
+         <div class="dropdown-content">
+      <a href="NewAdmin.aspx">Add New Admin</a>
+     <a href="ShowAdmin.aspx">Update All Admin</a>
+          </div>
+            </li>
+     
+        <li class="dropdown">
+           <a  class="dropbtn" href="EditT.aspx" >Manage Test
+           </a>
+         <div class="dropdown-content">
+             <a href="ShowTest.aspx">Show Test</a>
+    <a href="EditT.aspx">Update test</a>
+          </div>
+            </li>
+     <li><a href="feedback.aspx">feedback</a></li>
+                <li><a href="../Content.aspx">LogOut</a></li>            
+                 </ul>
+           </div>
+               
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+           
+         </asp:ContentPlaceHolder>
+          <div style=" color:chocolate; height:10px;  padding: 20px; background-color:deepskyblue; color:cornsilk; text-align: center;" id="footer"  >
+        Copyright 2019@ Sangola college sangola
+              </div>
+          </div>            
+
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<configuration>
+  <connectionStrings>
+    <add name="ConnectionString" connectionString="Data Source=ORCL;Persist Security Info=True;User ID=system;Password=password;Unicode=True"
+      providerName="System.Data.OracleClient" />
+    <add name="ConnectionString2" connectionString="Data Source=ORCL;User ID=system;Password=password;Unicode=True"
+      providerName="System.Data.OracleClient" />
+    <add name="ConnectionString3" connectionString="Data Source=ORCL;User ID=system;Password=password;Unicode=True"
+      providerName="System.Data.OracleClient" />
+  </connectionStrings>
+  <system.web>
+    <compilation debug="true" targetFramework="4.0">
+      <assemblies>
+        <add assembly="System.Data.OracleClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+        <add assembly="System.Windows.Forms.DataVisualization.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+      </assemblies>
+    </compilation>
+  </system.web>
+</configuration>

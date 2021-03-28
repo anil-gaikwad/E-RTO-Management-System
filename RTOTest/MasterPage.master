@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#"  CodeFile="MasterPage.master.cs" Inherits="login_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <title></title>
+    <link href="../StyleSheet.css" rel="stylesheet" />
+        <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="margin:0px auto 0px auto;">
+    <form id="form1" runat="server">
+                   <div   style="background-color:deepskyblue;  height:80px;  padding: 20px; color: white;text-shadow: 2px 2px 4px #000000;
+  text-align: center;"  >
+               <h1 >WELCOME IN LOGIN PAGE</h1>
+                </div>
+        <div >
+            <ul>
+            <li>
+                <asp:HyperLink ID="HyperLink2" NavigateUrl="~/RTOTest/Default.aspx" runat="server">HOME</asp:HyperLink></li>
+                 <li class="dropdown">
+                     <a class="dropbtn">SERVICES</a>
+         <div class="dropdown-content">
+              <asp:HyperLink ID="HyperLink3" NavigateUrl="~/RTOTest/user/learnerform.aspx" runat="server">Learning License</asp:HyperLink>
+             <asp:HyperLink ID="HyperLink4" NavigateUrl="~/RTOTest/user/driving.aspx" runat ="server">Driving License</asp:HyperLink>
+             <asp:HyperLink ID="HyperLink5" NavigateUrl="~/RTOTest/user/duplicate.aspx" runat="server">Duplicate License</asp:HyperLink>
+             <asp:HyperLink ID="HyperLink1" NavigateUrl="~/RTOTest/user/Reneview.aspx" runat="server">Reneving License</asp:HyperLink>
+          </div>
+            </li>
+                            <li>
+                <asp:HyperLink ID="HyperLink6" NavigateUrl="Default4.aspx" runat="server">GO FOR TEST</asp:HyperLink></li>
+            <li><asp:HyperLink ID="HyperLink7" NavigateUrl="~/content.aspx" runat="server">LOGOUT</asp:HyperLink></li>
+            </ul>
+        </div>
+        <div>
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate >
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">   
+            <p>
+                <br />
+            </p>
+         </asp:ContentPlaceHolder>
+               </ContentTemplate>
+                     </asp:UpdatePanel>
+       </div>                
+          <div style=" color:chocolate; height:10px;  padding: 20px; background-color:deepskyblue; color:cornsilk;text-align:center;" >
+               Copyright 2019@ Sangola college sangola
+              </div>           
+    </form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#"  CodeFile="MasterPage.master.cs" Inherits="login_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+       <link href="StyleSheet.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="margin:0px auto 0px auto;">
+    <form id="form1" runat="server">
+    
+    <div   style="background-color:deepskyblue;  height:50px;  padding: 20px; color: white;text-shadow: 2px 2px 4px #000000;
+  text-align: center;"  >
+               <h2>E-RTO Management System</h2>
+                </div>
+        <div>
+            <ul>
+            <li>
+                <asp:HyperLink ID="HyperLink2" NavigateUrl="~/content.aspx" runat="server">Home</asp:HyperLink></li>
+                <li class="dropdown">
+                <a class="dropbtn">RTO Informatiom</a>
+               <div class="dropdown-content">
+                 <asp:HyperLink ID="HyperLink6" NavigateUrl="~/information/Document.aspx" runat="server">Documents</asp:HyperLink>
+                 <asp:HyperLink ID="HyperLink7" NavigateUrl="~/test/tt.aspx" runat="server">Sample Test</asp:HyperLink>
+                 <asp:HyperLink ID="HyperLink8" NavigateUrl="~/test/rules.aspx" runat="server">Rules</asp:HyperLink>
+                 <asp:HyperLink ID="HyperLink9" NavigateUrl="~/information/permit.aspx" runat="server">Permit</asp:HyperLink>
+                 <asp:HyperLink ID="HyperLink10" NavigateUrl="~/test/typedl.aspx" runat="server">License Type</asp:HyperLink>
+                 </div>
+           </li>
+               <li>  <asp:HyperLink ID="HyperLink11" NavigateUrl="~/form/about.aspx" runat="server">AboutUs</asp:HyperLink></li>
+                <li class="dropdown">
+                    <a class="dropbtn" href="#">How to apply</a>
+                    <div class="dropdown-content">
+                 <asp:HyperLink ID="HyperLink12" NavigateUrl="~/information/learnerlicense.aspx" runat="server">Learner Form</asp:HyperLink>
+                 <asp:HyperLink ID="HyperLink13" NavigateUrl="~/information/drivinglicense.aspx" runat="server">Driving Form</asp:HyperLink>
+                 <asp:HyperLink ID="HyperLink14" NavigateUrl="~/information/renewallicense.aspx" runat="server">Reveving Form</asp:HyperLink>
+                 <asp:HyperLink ID="HyperLink15" NavigateUrl="~/information/duplicatelicense.aspx" runat="server">duplicate Form</asp:HyperLink>
+                     </div>
+                    </li>
+                <li> <asp:HyperLink ID="HyperLink16" runat="server" NavigateUrl="~/form/contactus.aspx">ContactUs</asp:HyperLink></li>
+               <li> <asp:HyperLink ID="HyperLink17" NavigateUrl="~/form/feedback.aspx" runat="server">Feedback</asp:HyperLink></li>
+               <li> <asp:HyperLink ID="HyperLink1" NavigateUrl="~/form/signin.aspx" runat="server">Login</asp:HyperLink></li>
+               <li> <asp:HyperLink ID="HyperLink3" NavigateUrl="~/form/signin.aspx" runat="server">GOFORTEST</asp:HyperLink></li>
+         </ul>
+           </div>
+            <div >    
+        <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+           
+         </asp:ContentPlaceHolder>
+ 
+                <br />
+                <br />
+ 
+       </div>
+                            
+          <div style=" color:cornsilk; height:10px;  padding: 15px; background-color:dimgray; color:cornsilk; text-align: center;" id="footer"  >     
+             Copyright 2019@ Sangola college sangola
+              </div>           
+    </form>
+</body>
+</html>
